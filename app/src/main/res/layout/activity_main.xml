@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Tiêu đề Name -->
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Ô nhập Name -->
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint=""
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Dob title -->
+        <TextView
+            android:id="@+id/textViewDob"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="Dob: "
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Input box for Date of Birth -->
+        <EditText
+            android:id="@+id/editTextDob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:hint=""
+            android:onClick="showDatePickerDialog"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Email subject -->
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Email input box -->
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint=""
+            android:text="" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="46dp"
+        android:orientation="vertical">
+
+        <!-- Radio Group for 3 Images -->
+        <RadioGroup
+            android:id="@+id/radioGroupImages"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <!-- Radio Button 1 -->
+            <RadioButton
+                android:id="@+id/radioButtonImage1"
+                android:layout_width="92dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:checked="true"
+                android:tag="image1.png"
+                android:text="" />
+
+
+            <!-- Radio Button 2 -->
+
+            <!-- Radio Button 3 -->
+
+            <RadioButton
+                android:id="@+id/radioButtonImage2"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:tag="img_2.png"
+                android:text="" />
+
+            <RadioButton
+                android:id="@+id/radioButtonImage3"
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:tag="img3.png"
+                android:text="" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Image 1 -->
+            <ImageView
+                android:id="@+id/imageView_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/image1" />
+
+            <!-- Image 2 -->
+            <ImageView
+                android:id="@+id/imageView_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/image2" />
+
+            <!-- Image 3 -->
+            <ImageView
+                android:id="@+id/imageView_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/image3" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Save button and View Details are on the same line -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="36dp"
+        android:orientation="horizontal">
+
+        <!-- Button Submit -->
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="Save" />
+
+        <!-- Button View Details -->
+        <Button
+            android:id="@+id/buttonViewDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="View Details" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/info_card_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Left side: Image -->
+        <ImageView
+            android:id="@+id/imageView_SelectedImage"
+            android:layout_width="100dp"
+            android:layout_height="94dp"
+            android:layout_gravity="start"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/image2" />
+
+        <!-- Right side: Name, DOB, and Email -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/textView_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Name: Nguyen Van A"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Date of Birth (DOB) -->
+            <TextView
+                android:id="@+id/textView_Dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DOB: 01/01/2001"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/textView_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: A@gmai;.com"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
